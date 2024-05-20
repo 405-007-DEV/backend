@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: chat
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db-n2566-kr.vpc-pub-cdb.ntruss.com:3306/mysql_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: mysql_dba
+    password: gotka9080!
+  # TODO datasource url, username, password ??? ??
+
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
