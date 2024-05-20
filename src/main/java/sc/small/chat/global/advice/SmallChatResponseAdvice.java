@@ -1,0 +1,1 @@
+package sc.small.chat.global.advice;public class SmallChatResponseAdvice {}
