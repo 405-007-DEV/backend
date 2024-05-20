@@ -15,6 +15,22 @@ spring:
     hibernate:
       ddl-auto: update
 
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger
+    operations-sorter: alpha
+    tags-sorter: alpha
+    disable-swagger-default-url: true
+    display-request-duration: true
+    filter: true # ?? ????
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  show-actuator: true # ????? actuator api ????
+
 server:
   servlet:
     context-path: /api/v1/
