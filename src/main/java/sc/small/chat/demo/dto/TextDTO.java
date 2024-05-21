@@ -1,0 +1,1 @@
+package sc.small.chat.demo.dto;import java.io.Serializable;public record TextDTO(    String text) implements Serializable {}

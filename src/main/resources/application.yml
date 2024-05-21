@@ -2,6 +2,17 @@ spring:
   application:
     name: chat
 
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 83652550395-qu7f06ijctmjghlr2tj8hlt4gjfj1692.apps.googleusercontent.com
+            client-secret: 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
+            scope: # google API ? ?? ?
+              - profile
+              - email
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://db-n2566-kr.vpc-pub-cdb.ntruss.com:3306/mysql_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
@@ -34,3 +45,7 @@ springdoc:
 server:
   servlet:
     context-path: /api/v1/
+
+
+jwt:
+  encryptionSecret: ENC(SHV+duWjEpL+JiE+sCzC0JwVfjcSvey5T9Ij7OKoqdFxBqgkhj53Iwp0lq+mS+MbemHJ+kVKvDvnSUwjpv0O+JfwKo3S/Zp4SNDlh5DbVgD5F1aL4YApAk2YvkWf++A28pHEfOxiwcHQn8OWIJHqOH9SGaTRbUg6R7lsLqTd4MihhSN4nGIm5DRKXx3niHkzED+6Fq3fnXI=)
