@@ -1,1 +1,0 @@
-package sc.small.chat.auth.oauth2.entity;public interface OAuthUserInfo {    String getProvider();    String getProviderId();    String getEmail();    String getName();    String getPicture();}
