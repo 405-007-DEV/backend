@@ -26,6 +26,11 @@ spring:
     hibernate:
       ddl-auto: update
 
+  data:
+    redis:
+      port: 6379
+      host: localhost
+
 springdoc:
   api-docs:
     enabled: true
