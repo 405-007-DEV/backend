@@ -48,4 +48,4 @@ server:
 
 
 jwt:
-  encryptionSecret: ENC(SHV+duWjEpL+JiE+sCzC0JwVfjcSvey5T9Ij7OKoqdFxBqgkhj53Iwp0lq+mS+MbemHJ+kVKvDvnSUwjpv0O+JfwKo3S/Zp4SNDlh5DbVgD5F1aL4YApAk2YvkWf++A28pHEfOxiwcHQn8OWIJHqOH9SGaTRbUg6R7lsLqTd4MihhSN4nGIm5DRKXx3niHkzED+6Fq3fnXI=)
+  secret_key_base: ENC(SHV+duWjEpL+JiE+sCzC0JwVfjcSvey5T9Ij7OKoqdFxBqgkhj53Iwp0lq+mS+MbemHJ+kVKvDvnSUwjpv0O+JfwKo3S/Zp4SNDlh5DbVgD5F1aL4YApAk2YvkWf++A28pHEfOxiwcHQn8OWIJHqOH9SGaTRbUg6R7lsLqTd4MihhSN4nGIm5DRKXx3niHkzED+6Fq3fnXI=)
