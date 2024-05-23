@@ -1,3 +1,5 @@
+# 공통 설정파일 - 필요 설정은 하위 환경 설정파일에서 오버라이딩
+
 spring:
   application:
     name: chat
@@ -26,7 +28,6 @@ spring:
 
   data:
     redis:
-      port: 6379
       host: localhost
 
 springdoc:
@@ -40,10 +41,10 @@ springdoc:
     tags-sorter: alpha
     disable-swagger-default-url: true
     display-request-duration: true
-    filter: true # ?? ????
+    filter: true
   default-consumes-media-type: application/json
   default-produces-media-type: application/json
-  show-actuator: true # ????? actuator api ????
+  show-actuator: true
 
 server:
   servlet:
@@ -51,8 +52,8 @@ server:
 
 
 jwt:
-  secret_key_base: ENC(vZ9d0WvdGFFU7iC/NyQTlX3Q2K3fqr1l2RUZL+uUBRNZS0wLFk3X7XmoSmwTuKMB3Z2LEXyeUGTX8K3xZxvQNRFdDOSF/xVLrTb4kXj/NUD4gXAFLFtrtByC95JH5jtDq5bXViEDITSjYJfL/kv6gA==)
+  secret-key-base: ENC(vZ9d0WvdGFFU7iC/NyQTlX3Q2K3fqr1l2RUZL+uUBRNZS0wLFk3X7XmoSmwTuKMB3Z2LEXyeUGTX8K3xZxvQNRFdDOSF/xVLrTb4kXj/NUD4gXAFLFtrtByC95JH5jtDq5bXViEDITSjYJfL/kv6gA==)
 
 app:
   oauth2:
-    authorized_redirect_uris: http://localhost:3000/oauth/redirect
+    authorized-redirect-uris: http://localhost:3000/oauth/redirect
