@@ -7,20 +7,16 @@ spring:
       client:
         registration:
           google:
-#            83652550395-qu7f06ijctmjghlr2tj8hlt4gjfj1692.apps.googleusercontent.com
             client-id: ENC(gkzJV5HUytLIBkRclZlitVPI4+kGmpXHfqjb5gYFUGS+ERvwmgNRgL2VnRF9sPVk9cDLM599axKdJIFhEnjOMYBH1zUwfe5kuKpo5+6JYnJoUBo2pxom3A==)
-            #            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
             client-secret: ENC(FUMnuBKFHX6iaRZGZrYOzf6WHkTnPGVGV839zDbNhhyfIn5J27gtTtMiVSxgyNQpBnqCoSSw5Kk=)
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
-            # google API ? ?? ?
             scope: profile, email
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://db-n2566-kr.vpc-pub-cdb.ntruss.com:3306/mysql_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: mysql_dba
-    password: gotka9080!
-  # TODO datasource url, username, password ??? ??
+    url: ENC(fSDS36X8Mv27i3wnvomVScbNmWqq83X5u4SI8bMY/3Rt6nSd6I5SuMFQH6PKxhx7TcoBAiwoQQLSMyPu89m6hUk98w+9Hiaz00o0m2FrlEfUZyt6a6pGesVVuExJMHQ3TYhiSHxyKkvHZjxhMEwPRAfMA73nP7xYoY3YTcrIYjQ=)
+    username: ENC(iVDQ7GIAA0QCDh9Owp3VfqxaMKxj9ySUSEV088JDr3k=)
+    password: ENC(UTnnyYwPD1t4UD1kjk5o/wyxpMo1bWc9Y8m667sF1b4=)
 
   jpa:
     show-sql: true
@@ -55,7 +51,7 @@ server:
 
 
 jwt:
-  secret_key_base: ENC(1PCPbKH69cZ6PgzzWZWChHdmN3Hx8wq3YyZ0lRG+SZlR8yGCNqKneWrH4tb4gAMzS4OdtO4PaTJlNOUVvQmLCQ==)
+  secret_key_base: ENC(vZ9d0WvdGFFU7iC/NyQTlX3Q2K3fqr1l2RUZL+uUBRNZS0wLFk3X7XmoSmwTuKMB3Z2LEXyeUGTX8K3xZxvQNRFdDOSF/xVLrTb4kXj/NUD4gXAFLFtrtByC95JH5jtDq5bXViEDITSjYJfL/kv6gA==)
 
 app:
   oauth2:
