@@ -7,11 +7,13 @@ spring:
       client:
         registration:
           google:
-            client-id: 83652550395-qu7f06ijctmjghlr2tj8hlt4gjfj1692.apps.googleusercontent.com
-            client-secret: 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
-            scope: # google API ? ?? ?
-              - profile
-              - email
+#            83652550395-qu7f06ijctmjghlr2tj8hlt4gjfj1692.apps.googleusercontent.com
+            client-id: ENC(gkzJV5HUytLIBkRclZlitVPI4+kGmpXHfqjb5gYFUGS+ERvwmgNRgL2VnRF9sPVk9cDLM599axKdJIFhEnjOMYBH1zUwfe5kuKpo5+6JYnJoUBo2pxom3A==)
+            #            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
+            client-secret: ENC(FUMnuBKFHX6iaRZGZrYOzf6WHkTnPGVGV839zDbNhhyfIn5J27gtTtMiVSxgyNQpBnqCoSSw5Kk=)
+            redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            # google API ? ?? ?
+            scope: profile, email
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -49,8 +51,12 @@ springdoc:
 
 server:
   servlet:
-    context-path: /v1/
+    context-path: /api/v1/
 
 
 jwt:
-  secret_key_base: ENC(SHV+duWjEpL+JiE+sCzC0JwVfjcSvey5T9Ij7OKoqdFxBqgkhj53Iwp0lq+mS+MbemHJ+kVKvDvnSUwjpv0O+JfwKo3S/Zp4SNDlh5DbVgD5F1aL4YApAk2YvkWf++A28pHEfOxiwcHQn8OWIJHqOH9SGaTRbUg6R7lsLqTd4MihhSN4nGIm5DRKXx3niHkzED+6Fq3fnXI=)
+  secret_key_base: ENC(1PCPbKH69cZ6PgzzWZWChHdmN3Hx8wq3YyZ0lRG+SZlR8yGCNqKneWrH4tb4gAMzS4OdtO4PaTJlNOUVvQmLCQ==)
+
+app:
+  oauth2:
+    authorized_redirect_uris: http://localhost:3000/oauth/redirect
