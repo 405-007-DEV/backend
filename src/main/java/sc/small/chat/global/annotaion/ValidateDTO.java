@@ -1,0 +1,1 @@
+package sc.small.chat.global.annotaion;public @interface ValidateDTO {}

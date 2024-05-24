@@ -15,13 +15,14 @@ spring:
             scope: profile, email
 
   datasource:
+    # DB 로깅용 연결정보 - 성능저하 방지를 위해 logback.xml 설정 필수 - parameter 확인
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     driver-class-name: org.mariadb.jdbc.Driver
     url: ENC(NJoE4qQ/KWpucJHkzytoOLoDsOAifyKuL68x2C0QSiMU3ZdRkakgvmbaU62bezIn628k3DK/S7OH29RUUXTNcyLCti8nbqXe)
     username: ENC(rwefQlhEi81aBX/iYwXRBSst4/x5+xcA)
     password: ENC(+Tm0Pp03+9KGocszzdLJm4HjBRq0ZaL51LGhLtff9jw=)
-#    url: ENC(fSDS36X8Mv27i3wnvomVScbNmWqq83X5u4SI8bMY/3Rt6nSd6I5SuMFQH6PKxhx7TcoBAiwoQQLSMyPu89m6hUk98w+9Hiaz00o0m2FrlEfUZyt6a6pGesVVuExJMHQ3TYhiSHxyKkvHZjxhMEwPRAfMA73nP7xYoY3YTcrIYjQ=)
-#    username: ENC(iVDQ7GIAA0QCDh9Owp3VfqxaMKxj9ySUSEV088JDr3k=)
-#    password: ENC(UTnnyYwPD1t4UD1kjk5o/wyxpMo1bWc9Y8m667sF1b4=)
+    hikari:
+      max-lifetime: 177000 # 177초, hikari는 RDS wait_timeout(180초) 보다 2 ~ 3초 정도 짧게 줄 것을 권장
 
   jpa:
     show-sql: false
