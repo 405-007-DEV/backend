@@ -24,7 +24,17 @@ spring:
 #    password: ENC(UTnnyYwPD1t4UD1kjk5o/wyxpMo1bWc9Y8m667sF1b4=)
 
   jpa:
-    show-sql: true
+    show-sql: false
+
+    properties:
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: ALL
+      hibernate:
+        format_sql: false
+        default_batch_fetch_size: 100 # batch 처리(update, insert)시 N + 1 해결
+
     hibernate:
       ddl-auto: update
 
