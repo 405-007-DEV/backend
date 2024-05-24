@@ -1,0 +1,1 @@
+package sc.small.chat.profile.repository;import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;import sc.small.chat.profile.entiy.ProfileJob;@Repositorypublic interface ProfileJobRepository extends JpaRepository<ProfileJob, Long>{}

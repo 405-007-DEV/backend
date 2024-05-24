@@ -1,0 +1,1 @@
+package sc.small.chat.member.dto;import io.swagger.v3.oas.annotations.media.Schema;@Schema(description = "회원가입 DTO", name = "SignUpDTO")public class SignUpDTO {//    public record Request()}
