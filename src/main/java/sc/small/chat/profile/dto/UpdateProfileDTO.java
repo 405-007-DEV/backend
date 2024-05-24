@@ -1,1 +1,0 @@
-package sc.small.chat.profile.dto;public class UpdateProfileDTO {}
