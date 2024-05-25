@@ -1,0 +1,1 @@
+package sc.small.chat.profile.dto;import io.swagger.v3.oas.annotations.media.Schema;import lombok.Builder;import lombok.Getter;import lombok.Setter;@Getter@Setter@Builder@Schema(description = "추천 회원 검색 리스트 DTO", name = "RecommendProfileDTO")public class RecommendProfileDTO {}
