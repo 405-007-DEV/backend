@@ -60,8 +60,6 @@ springdoc:
   show-actuator: true
 
 server:
-  ssl:
-    enabled: false
   servlet:
     context-path: /api/v1/
 
