@@ -1,0 +1,1 @@
+package sc.small.chat.profile.repository;import org.springframework.data.jpa.repository.JpaRepository;import sc.small.chat.profile.entiy.Topic;public interface TopicRepository extends JpaRepository<Topic, Long> {}
