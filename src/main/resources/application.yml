@@ -13,6 +13,12 @@ spring:
             client-secret: ENC(FUMnuBKFHX6iaRZGZrYOzf6WHkTnPGVGV839zDbNhhyfIn5J27gtTtMiVSxgyNQpBnqCoSSw5Kk=)
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: profile, email
+#        provider:
+#          google:
+#            authorization-uri: https://accounts.google.com/o/oauth2/auth
+#            token-uri: https://accounts.google.com/o/oauth2/token
+#            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+#            user-name-attribute: email
 
   datasource:
     # DB 로깅용 연결정보 - 성능저하 방지를 위해 logback.xml 설정 필수 - parameter 확인
