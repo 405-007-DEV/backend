@@ -1,0 +1,1 @@
+package sc.small.chat.global.security.oauth.repository;import org.springframework.data.jpa.repository.JpaRepository;import sc.small.chat.global.security.oauth.entity.OAuthProfile;public interface OAuth2ProfileRepository extends JpaRepository<OAuthProfile, Long> {    OAuthProfile findByProviderId(String providerId);}
